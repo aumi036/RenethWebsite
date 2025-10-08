@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal</title>
+  <link rel="stylesheet" href="Log-in.css">
+</head>
+<body>
+  <div class="Zambusurs"><h3>ZambuSur</h3>
+  </div>
+  <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    <div class="sidebar" id="sidebar">
+        <h1>Menu</h1>
+        <a href="index.html" class="active">Home</a>
+        <a href="Places.html">Places</a>
+        <a href="Delicacies.html">Delicacies</a>
+        <a href="Log-in.html">Log in</a>
+    </div>
+  <div class="login-box">
+    <img src="logo.png" class="logo">
+    <h2>ZamboSur Portal</h2>
+    <p>Province of ZambuSur</p>
+    <form>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+
+      <div class="options">
+        <label><input type="checkbox"> Stay signed in</label>
+      </div>
+
+      <button type="submit" class="signin-btn">SIGN IN</button>
+      <button type="button" class="create-btn">CREATE ACCOUNT</button>
+    </form>
+    <footer>
+      <small>&copy; Province of ZambSur<br>Powered by Kai.</small>
+    </footer>
+  </div>
+<script>
+    function toggleMenu() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+    }
+  </script>
+  
+
+</html>
